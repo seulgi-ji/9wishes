@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./imges/fabicon.png" type="image/x-icon">
     <title>나인위시스 | 똑똑한 아름다움의 비밀</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
@@ -18,7 +18,7 @@
                 <a href="#" class="close"><img src="#" alt=""></a>
             </div>
             <div id="top">
-                <nav>
+                <nav id="header_left">
                     <ul id="gnb">
                         <li><a href="#">PRODUCT</a>
                             <div class="category">
@@ -26,47 +26,49 @@
                                 <ul>
                                     <li><a href="#">유형별</a>
                                         <ul>
-                                            <li><a href="#">토너로션</a></li>
-                                            <li><a href="#">앰플세럼</a></li>
-                                            <li><a href="#">크림</a></li>
-                                            <li><a href="#">클렌징팩</a></li>
-                                            <li><a href="#">선베이스</a></li>
-                                            <li><a href="#">립케어</a></li>
-                                            <li><a href="#">세트</a></li>
+                                            <li>
+                                                <a href="#">토너로션</a>
+                                                <a href="#">앰플세럼</a>
+                                                <a href="#">크림</a>
+                                                <a href="#">클렌징팩</a>
+                                                <a href="#">선베이스</a>
+                                                <a href="#">립케어</a>
+                                                <a href="#">세트</a>
+                                            </li>
                                         </ul>
                                     </li>
-                                </ul>
-                                <ul>
                                     <li><a href="#">라인별</a>
                                         <ul>
-                                            <li><a href="#">톤업</a></li>
-                                            <li><a href="#">판테톨</a></li>
-                                            <li><a href="#">하이드라</a></li>
-                                            <li><a href="#">라이스</a></li>
-                                            <li><a href="#">비건콜라겐</a></li>
-                                            <li><a href="#">PH캄</a></li>
-                                            <li><a href="#">더마틱 시카</a></li>
-                                            <li><a href="#">미라클 화이트</a></li>
-                                            <li><a href="#">기능별 앰플</a></li>
+                                            <li>
+                                                <a href="#">톤업</a>
+                                                <a href="#">판테톨</a>
+                                                <a href="#">하이드라</a>
+                                                <a href="#">라이스</a>
+                                                <a href="#">비건콜라겐</a>
+                                                <a href="#">PH캄</a>
+                                                <a href="#">더마틱 시카</a>
+                                                <a href="#">미라클 화이트</a>
+                                                <a href="#">기능별 앰플</a>
+                                            </li>
                                         </ul>
                                     </li>
-                                </ul>
-                                <ul>
                                     <li><a href="#">피부고민별</a>
                                         <ul>
-                                            <li><a href="#">수분보습</a></li>
-                                            <li><a href="#">미백</a></li>
-                                            <li><a href="#">탄력</a></li>
-                                            <li><a href="#">민감진정</a></li>
-                                            <li><a href="#">각질모공</a></li>
-                                            <li><a href="#">트러블</a></li>
+                                            <li>
+                                                <a href="#">수분보습</a>
+                                                <a href="#">미백</a>
+                                                <a href="#">탄력</a>
+                                                <a href="#">민감진정</a>
+                                                <a href="#">각질모공</a>
+                                                <a href="#">트러블</a>
+                                            </li>
                                         </ul>
                                     </li>
                                 </ul>
-                                <ul>
-                                    <li><a href="#"><img src="#" alt=""></a></li>
-                                    <li><a href="#">수분광 진짜 톤업 선크림</a></li>
-                                </ul>
+                                <div>
+                                    <a href="#"><img src="#" alt=""></a>
+                                    <a href="#">수분광 진짜 톤업 선크림</a>
+                                </div>
                             </div>
                         </li>
                         <li><a href="#">ENENT</a></li>
@@ -77,20 +79,14 @@
                         <li><a href="#">CS</a></li>
                     </ul>
                 </nav>
-                <h1><a href="#"><img src="#" alt="logo"></a></h1>
+                <h1><a href="#"><img src="#" alt="9wishes"></a></h1>
                 <ul id="lnb">
-                    <li><a href="#"><img src="#" alt="검색"></a></li>
-                    <li><a href="#"><img src="#" alt="로그인"></a>
-                        <form action="#" method="get" class="shortcut">1초 회원가입</form>
-                        <ul>
-                            <li><a href="#">로그인</a></li>
-                            <li><a href="#">회원가입</a></li>
-                            <li><a href="#">마이페이지</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#"><img src="#" alt="장바구니"></a></li>
-                    <li><a href="#"><img src="#" alt="언어설정"></a></li>
+                    <li class="search"><a href="#"><img src="#" alt="검색"></a></li>
+                    <li class="login"><a href="#"><img src="#" alt="로그인"></a></li>
+                    <li class="basket"><a href="#"><img src="#" alt="장바구니"><span>0</span></a></li>
+                    <li class="language"><a href="#"><img src="#" alt="언어설정"></a></li>
                 </ul>
+                <a href="#" class="shortcut">1초 회원가입</a>
             </div>
         </header>
         <main>
@@ -230,19 +226,37 @@
                     </div>
                 </div>
             </div>
-            <div class="subheading">
-                <h1>Event</h1>
-                <a href="#">전체보기<img src="#" alt=""></a>
-            </div>
             <div id="2row">
+                <div class="subheading">
+                    <h1>Event</h1>
+                    <a href="#">전체보기<img src="#" alt=""></a>
+                </div>
                 <div class="banner">
                     <div class="enent">
-                        <a href="#">
-                            <div>
+                        <div id="enent_slide1">
+                            <a href="#">
                                 <h2>MEMBERSHLP<br>BENEFIT</h2>
                                 <p>신규회원 특별 혜택</p>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+                        <div id="enent_slide2">
+                            <a href="#">
+                                <h2>MEMBERSHLP<br>BENEFIT</h2>
+                                <p>신규회원 특별 혜택</p>
+                            </a>
+                        </div>
+                        <div id="enent_slide3">
+                            <a href="#">
+                                <h2>MEMBERSHLP<br>BENEFIT</h2>
+                                <p>신규회원 특별 혜택</p>
+                            </a>
+                        </div>
+                        <div id="enent_slide4">
+                            <a href="#">
+                                <h2>MEMBERSHLP<br>BENEFIT</h2>
+                                <p>신규회원 특별 혜택</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
